@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daixiaoyu.alarmsystem.mapper.AlarmOriginMapper">
+    <resultMap id="alarmOrigin" type="com.daixiaoyu.alarmsystem.entity.AlarmOrigin">
+        <result property="uniqueId" column="unique_id"/>
+        <result property="resourceType" column="resource_type"/>
+        <result property="resourceCode" column="resource_code"/>
+        <result property="indicatorCode" column="indicator_code"/>
+        <result property="description" column="description"/>
+        <result property="alarmStatus" column="alarm_status"/>
+        <result property="alarmLevel" column="alarm_level"/>
+        <result property="sourceSystem" column="source_system"/>
+        <result property="triggerTime" column="trigger_time"/>
+        <result property="latestTime" column="latest_time"/>
+        <result property="recoveryTime" column="recovery_time"/>
+    </resultMap>
+
+    <insert id="insertAlarmOrigin">
+
+    </insert>
+
+    <select id="queryAlarmOrigin" resultMap="alarmOrigin">
+
+    </select>
+</mapper>
